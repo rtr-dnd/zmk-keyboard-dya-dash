@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: dya_dash}
 layers:
   Base Layer:
-  - TAB
+  - ESCAPE
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - '['
-  - LCTRL
+  - '-'
+  - {t: TAB, h: LCTRL}
   - A
   - S
   - D
@@ -31,19 +31,19 @@ layers:
   - C
   - V
   - B
-  - B
+  - '{'
   - N
   - M
   - ','
   - .
   - /
-  - Config Layer
+  - LEFT ALT
   - LWIN
-  - LALT
+  - LEFT GUI
   - SPACE
   - Left SPACE
-  - Right SPACE
-  - SPACE
+  - BACKSPACE
+  - ENTER
   - RALT
   - RWIN
   - OUT TOG
@@ -420,72 +420,13 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Config Layer:
-  - '&bootloader'
-  - ''
-  - ''
-  - ''
-  - ''
-  - 'LED
+  Config Layer: ['&bootloader', '', '', '', '', 'LED
 
-    Battery'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&bootloader'
-  - '&sys_reset'
-  - ''
-  - ''
-  - ''
-  - ''
-  - 'LED
+      Battery', '', '', '', '', '', '&bootloader', '&sys_reset', '', '', '', '', 'LED
 
-    BLE'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&sys_reset'
-  - '&studio_unlock'
-  - ''
-  - ''
-  - ''
-  - ''
-  - 'LED
+      BLE', '', '', '', '', '', '&sys_reset', '&studio_unlock', '', '', '', '', 'LED
 
-    Layer'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&dfnxt'
-  - BT CLR
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+      Layer', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '&dfnxt', BT CLR, '', '', '', '', '', '', '', '', '', '', '', '']
   Trackball Automouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
