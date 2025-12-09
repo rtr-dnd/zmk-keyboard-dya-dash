@@ -49,7 +49,7 @@ layers:
   - OUT TOG
   - '&out_bt_nxt'
   - ↑
-  - ←
+  - Config Layer
   - ↓
   - →
   - Trackball Manual
@@ -180,13 +180,72 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Config Layer: ['&bootloader', '', '', '', '', 'LED
+  Config Layer:
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - ''
+  - 'LED
 
-      Battery', '', '', '', '', '', '&bootloader', '&sys_reset', '', '', '', '', 'LED
+    Battery'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - ''
+  - 'LED
 
-      BLE', '', '', '', '', '', '&sys_reset', '&studio_unlock', '', '', '', '', 'LED
+    BLE'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - '&studio_unlock'
+  - ''
+  - ''
+  - ''
+  - ''
+  - 'LED
 
-      Layer', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '&dfnxt', BT CLR, '', '', '', '', '', '', '', '', '', '', '', '']
+    Layer'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&dfnxt'
+  - BT CLR
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   Trackball Automouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
