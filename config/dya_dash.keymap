@@ -167,7 +167,7 @@
 &trans  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp EQUAL      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N0     &kp N4  &kp N5  &kp N6  &trans         &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans     &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans
+        &trans     &trans  &trans  &trans  &mo 3          &trans  &trans  &trans  &trans
 &trans  &trans                                            &trans  &trans  &trans  &trans
 &trans  &trans     &trans  &trans                         &trans  &trans  &trans  &trans
             >;
@@ -179,7 +179,7 @@
 &trans  &kp LS(GRAVE)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)      &trans  &mkp MB4  &kp UP    &mkp MB5   &trans  &trans
 &trans  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans             &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
 &trans  &trans         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)  &trans  &trans    &trans    &trans     &trans  &trans
-        &trans         &trans      &trans      &trans      &trans             &trans  &trans    &trans    &trans
+        &trans         &mo 3       &trans      &trans      &trans             &trans  &trans    &trans    &trans
 &trans  &trans                                                                &trans  &trans    &trans    &trans
 &trans  &trans         &trans      &trans                                     &none   &none     &trans    &trans
             >;
