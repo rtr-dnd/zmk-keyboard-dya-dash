@@ -145,65 +145,17 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1  | touch2  | touch3  | touch 4 |
 
             bindings = <
-&kp ESCAPE        &kp Q         &kp W     &kp E         &kp R      &kp T       &kp Y           &kp U             &kp I     &kp O      &kp P     &kp MINUS
-&mt LCTRL TAB     &kp A         &kp S     &kp D         &kp F      &kp G       &hbackspace     &jenter           &kp K     &kp L      &kp SEMI  &kp SQT
-&kp LSHIFT        &kp Z         &kp X     &kp C         &kp V      &kp B       &kp LEFT_BRACE  &kp N             &kp M     &kp COMMA  &kp DOT   &kp FSLH
-                  &kp LEFT_ALT  &kp LWIN  &kp LEFT_GUI  &kp SPACE  &mo LEFT_L  &kp BACKSPACE   &kp ENTER         &kp RALT  &kp RWIN
-&out OUT_TOG      &out_bt_nxt                                                  &kp UP          &kp LEFT          &kp DOWN  &kp RIGHT
-&mo TRACKBALL_L2  &mo SCROLL_L  &none     &none                                &mo SCROLL_L    &mo TRACKBALL_L2  &none     &none
+&kp ESCAPE     &kp Q         &kp W        &kp E         &kp R      &kp T        &kp Y           &kp U        &kp I     &kp O      &kp P     &kp MINUS
+&mt LCTRL TAB  &kp A         &kp S        &kp D         &kp F      &kp G        &kp H           &kp J        &kp K     &kp L      &kp SEMI  &kp SQT
+&kp LSHIFT     &kp Z         &kp X        &kp C         &kp V      &kp B        &kp LEFT_BRACE  &kp N        &kp M     &kp COMMA  &kp DOT   &kp FSLH
+               &kp LEFT_ALT  &lt 1 LANG2  &kp LEFT_GUI  &kp SPACE  &lt 2 LANG1  &kp BACKSPACE   &lt 2 ENTER  &kp RALT  &kp RWIN
+&out OUT_TOG   &out_bt_nxt                                                      &kp UP          &kp LEFT     &kp DOWN  &kp RIGHT
+&mo 5          &mo 6         &none        &none                                 &mo 6           &mo 5        &none     &none
             >;
         };
 
-        windows_default_layer {
-            display-name = "Windows Default";
-            bindings = <
-&trans  &trans  &trans  &trans          &trans  &trans            &trans             &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans  &trans            &trans             &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans  &trans            &trans             &trans  &trans          &trans  &trans  &trans
-        &trans  &trans  &mt LALT LANG2  &trans  &lt LEFT_L LANG2  &lt RIGHT_L LANG1  &trans  &mt RALT LANG1  &trans
-&trans  &trans                                                    &trans             &trans  &trans          &trans
-&trans  &trans  &trans  &trans                                    &trans             &trans  &trans          &trans
-            >;
-        };
-
-        mac_default_layer {
-            display-name = "Mac Default";
-            bindings = <
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-        &trans  &kp LALT  &mt LCMD LANG2  &trans  &lt LEFT_L LANG2  &lt RIGHT_L LANG1  &trans  &mt RCMD LANG1  &kp RALT
-&trans  &trans                                                      &trans             &trans  &trans          &trans
-&trans  &trans  &trans    &trans                                    &trans             &trans  &trans          &trans
-            >;
-        };
-
-        ios_default_layer {
-            display-name = "iOS Default";
-            bindings = <
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-        &trans  &kp LALT  &mt LCMD LANG2  &trans  &lt LEFT_L LANG2  &lt RIGHT_L LANG1  &trans  &mt RCMD LANG1  &kp RALT
-&trans  &trans                                                      &trans             &trans  &trans          &trans
-&trans  &trans  &trans    &trans                                    &trans             &trans  &trans          &trans
-            >;
-        };
-
-        linux_default_layer {
-            display-name = "Linux Default";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        left_layer {
-            display-name = "Left SPACE";
+        lang2_layer_num {
+            display-name = "english long press";
 
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // |  ESC    |  !  |  @  |  #       |  $  |  %       |                           |  ^  |  &      |  *      |  (  |  )  |  ]  |
@@ -212,24 +164,24 @@
             //           |     |     |          |     |          |                           |     |         |         |     |
 
             bindings = <
-&kp ESC  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp RBKT
-&trans   &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BACKSLASH
-&trans   &trans    &trans  &trans    &trans    &trans     &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp RSHIFT
-         &trans    &trans  &trans    &trans    &trans     &trans     &trans     &trans     &trans
-&trans   &trans                                           &trans     &trans     &trans     &trans
-&trans   &trans    &trans  &trans                         &trans     &trans     &trans     &trans
+&trans  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp EQUAL      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0     &kp N4  &kp N5  &kp N6  &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans     &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans
+&trans  &trans                                            &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans                         &trans  &trans  &trans  &trans
             >;
         };
 
-        right_layer {
-            display-name = "Right SPACE";
+        lang1_layer_sym {
+            display-name = "kana long press";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &kp PG_UP     &kp UP        &kp PG_DN  &trans  &kp C_AL_LOCK
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &kp LEFT      &kp DOWN      &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans
-&trans  &trans                                  &trans      &trans        &trans        &trans
-&trans  &trans  &trans  &trans                  &none       &none         &trans        &trans
+&trans  &kp LS(GRAVE)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)      &trans  &kp K_BACK  &kp UP    &kp K_FORWARD  &trans  &trans
+&trans  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans             &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &trans  &trans
+&trans  &trans         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)  &trans  &trans      &trans    &trans         &trans  &trans
+        &trans         &trans      &trans      &trans      &trans             &trans  &trans      &trans    &trans
+&trans  &trans                                                                &trans  &trans      &trans    &trans
+&trans  &trans         &trans      &trans                                     &none   &none       &trans    &trans
             >;
         };
 
@@ -248,24 +200,24 @@
         trackball_layer {
             display-name = "Trackball Automouse";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans     &trans     &trans     &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp LCLK  &mkp RCLK  &mkp RCLK  &mo SCROLL_L  &kp RALT
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp MCLK  &mkp LCLK  &trans     &trans        &trans
-        &trans  &trans  &trans  &trans  &mo SCROLL_L  &mkp MB4  &mkp MB5   &trans     &trans
-&trans  &trans                                        &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans                        &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp MCLK  &trans  &mo 6   &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp RCLK  &mkp RCLK  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &mo 6   &mkp MB4  &mkp MB5   &trans     &trans
+&trans  &trans                                  &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans
             >;
         };
 
         trackball_layer2 {
             display-name = "Trackball Manual";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans     &trans     &trans     &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp LCLK  &mkp RCLK  &mkp RCLK  &mo SCROLL_L  &kp RALT
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp MCLK  &mkp LCLK  &trans     &trans        &trans
-        &trans  &trans  &trans  &trans  &mo SCROLL_L  &mkp MB4  &mkp MB5   &trans     &trans
-&trans  &trans                                        &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans                        &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp RCLK  &mkp RCLK  &mo 6   &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK  &trans     &trans  &trans
+        &trans  &trans  &trans  &trans  &mo 6   &mkp MB4  &mkp MB5   &trans     &trans
+&trans  &trans                                  &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans
             >;
         };
 
