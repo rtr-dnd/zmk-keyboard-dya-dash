@@ -145,12 +145,12 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1  | touch2  | touch3  | touch 4 |
 
             bindings = <
-&kp ESCAPE     &kp Q         &kp W        &kp E         &kp R      &kp T        &kp Y           &kp U        &kp I     &kp O      &kp P     &kp MINUS
-&mt LCTRL TAB  &kp A         &kp S        &kp D         &kp F      &kp G        &kp H           &kp J        &kp K     &kp L      &kp SEMI  &kp SQT
-&kp LSHIFT     &kp Z         &kp X        &kp C         &kp V      &kp B        &kp LEFT_BRACE  &kp N        &kp M     &kp COMMA  &kp DOT   &kp FSLH
-               &kp LEFT_ALT  &lt 1 LANG2  &kp LEFT_GUI  &kp SPACE  &lt 2 LANG1  &kp BACKSPACE   &lt 2 ENTER  &kp RALT  &kp RWIN
-&out OUT_TOG   &out_bt_nxt                                                      &kp UP          &mo 3        &kp DOWN  &kp RIGHT
-&mo 5          &mo 6         &none        &none                                 &mo 6           &mo 5        &none     &none
+&kp ESCAPE     &kp Q         &kp W        &kp E         &kp R      &kp T        &kp Y           &kp U         &kp I     &kp O      &kp P     &kp MINUS
+&mt LCTRL TAB  &kp A         &kp S        &kp D         &kp F      &kp G        &kp H           &kp J         &kp K     &kp L      &kp SEMI  &kp SQT
+&kp LSHIFT     &kp Z         &kp X        &kp C         &kp V      &kp B        &kp LEFT_BRACE  &kp N         &kp M     &kp COMMA  &kp DOT   &kp FSLH
+               &kp LEFT_ALT  &lt 1 LANG2  &kp LEFT_GUI  &kp SPACE  &lt 2 LANG1  &kp BACKSPACE   &lt 2 RETURN  &kp RALT  &kp RWIN
+&out OUT_TOG   &out_bt_nxt                                                      &kp UP          &mo 3         &kp DOWN  &kp RIGHT
+&mo 5          &mo 6         &none        &none                                 &mo 6           &mo 5         &none     &none
             >;
         };
 
@@ -176,12 +176,12 @@
         lang1_layer_sym {
             display-name = "kana long press";
             bindings = <
-&trans  &kp LS(GRAVE)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)      &trans  &mkp MB4  &kp UP    &mkp MB5   &trans  &trans
-&trans  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans             &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)  &trans  &trans    &trans    &trans     &trans  &trans
-        &trans         &mo 3       &trans      &trans      &trans             &trans  &trans    &trans    &trans
-&trans  &trans                                                                &trans  &trans    &trans    &trans
-&trans  &trans         &trans      &trans                                     &none   &none     &trans    &trans
+&trans  &kp LS(GRAVE)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)      &trans           &mkp MB4  &kp UP    &mkp MB5   &trans  &trans
+&trans  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans             &trans           &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)  &kp RIGHT_BRACE  &trans    &trans    &trans     &trans  &trans
+        &trans         &mo 3       &trans      &trans      &trans             &trans           &trans    &trans    &trans
+&trans  &trans                                                                &trans           &trans    &trans    &trans
+&trans  &trans         &trans      &trans                                     &none            &none     &trans    &trans
             >;
         };
 
