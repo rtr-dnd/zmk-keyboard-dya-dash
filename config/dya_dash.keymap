@@ -176,12 +176,12 @@
         lang1_layer_sym {
             display-name = "kana long press";
             bindings = <
-&trans  &kp LS(GRAVE)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)      &trans  &kp K_BACK  &kp UP    &kp K_FORWARD  &trans  &trans
-&trans  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans             &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &trans  &trans
-&trans  &trans         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)  &trans  &trans      &trans    &trans         &trans  &trans
-        &trans         &trans      &trans      &trans      &trans             &trans  &trans      &trans    &trans
-&trans  &trans                                                                &trans  &trans      &trans    &trans
-&trans  &trans         &trans      &trans                                     &none   &none       &trans    &trans
+&trans  &kp LS(GRAVE)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)      &trans  &mkp MB4  &kp UP    &mkp MB5   &trans  &trans
+&trans  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans             &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)  &trans  &trans    &trans    &trans     &trans  &trans
+        &trans         &trans      &trans      &trans      &trans             &trans  &trans    &trans    &trans
+&trans  &trans                                                                &trans  &trans    &trans    &trans
+&trans  &trans         &trans      &trans                                     &none   &none     &trans    &trans
             >;
         };
 
@@ -200,24 +200,24 @@
         trackball_layer {
             display-name = "Trackball Automouse";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp MCLK  &trans  &mo 6   &kp RALT
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp RCLK  &mkp RCLK  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &mo 6   &mkp MB4  &mkp MB5   &trans     &trans
-&trans  &trans                                  &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &trans  &mo 6   &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp RCLK  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans                                  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans
             >;
         };
 
         trackball_layer2 {
             display-name = "Trackball Manual";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp RCLK  &mkp RCLK  &mo 6   &kp RALT
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK  &trans     &trans  &trans
-        &trans  &trans  &trans  &trans  &mo 6   &mkp MB4  &mkp MB5   &trans     &trans
-&trans  &trans                                  &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &trans  &mo 6   &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp RCLK  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans                                  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans
             >;
         };
 
