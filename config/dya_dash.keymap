@@ -115,6 +115,16 @@
             key-positions = <47 49>;
             bindings = <&kp C_VOL_UP>;
         };
+
+        ctrl-tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <12 0>;
+        };
+
+        ctrl-shift-tab {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <24 12 0>;
+        };
     };
 
     keymap {
