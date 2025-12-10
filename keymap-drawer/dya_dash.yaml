@@ -43,7 +43,7 @@ layers:
   - SPACE
   - {t: LANG1, h: kana long press}
   - BACKSPACE
-  - {t: LANG1, h: kana long press}
+  - {t: ENTER, h: kana long press}
   - RALT
   - RWIN
   - OUT TOG
