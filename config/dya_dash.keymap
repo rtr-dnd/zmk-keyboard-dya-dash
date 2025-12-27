@@ -14,26 +14,25 @@
 // Layer definitions
 
 #define DEFAULT_L 0
-#define WINDOWS_L 1
-#define MAC_L 2
-#define IOS_L 3
-#define LINUX_L 4
-#define LEFT_L 5
-#define RIGHT_L 6
-#define CONFIG_L 7
-#define TRACKBALL_L 8
-#define TRACKBALL_L2 9
-#define SCROLL_L 10
-#define EXT1_L 11
-#define EXT2_L 12
-#define EXT3_L 13
+#define LANG2_L 1
+#define LANG1_L 2
+#define CONFIG_L 3
+#define TRACKBALL_L 4
+#define TRACKBALL_L2 5
+#define SCROLL_L 6
+#define EXT1_L 7
+#define EXT2_L 8
+#define EXT3_L 9
 
-// &trackball_listener {
-//     input-processors = <
-//     // Example: Adjust sensitivity of trackball multiply by 1 and divide by 60.
-//     // &zip_xy_scaler 1 60
-//     >;
-// };
+&trackball_listener {
+    input-processors = <
+    // TRACKBALL_L layer is activated when trackball is used.
+    // After 500ms of trackball inactivity, the layer is deactivated.
+    &zip_temp_layer TRACKBALL_L 500
+    // Example: Adjust sensitivity of trackball multiply by 1 and divide by 60.
+    // &zip_xy_scaler 1 60
+    >;
+};
 
 &trackball_scroller {
     layers = <SCROLL_L>;
@@ -154,8 +153,8 @@
             bindings = <
 &kp ESCAPE     &kp Q         &kp W        &kp E         &kp R      &kp T        &kp Y           &kp U        &kp I     &kp O      &kp P     &kp MINUS
 &mt LCTRL TAB  &kp A         &kp S        &kp D         &kp F      &kp G        &kp H           &kp J        &kp K     &kp L      &kp SEMI  &kp SQT
-&kp LSHIFT     &kp Z         &kp X        &kp C         &kp V      &kp B        &kp LEFT_BRACE  &kp N        &kp M     &kp COMMA  &kp DOT   &kp FSLH
-               &kp LEFT_ALT  &lt 1 LANG2  &kp LEFT_GUI  &kp SPACE  &lt 2 LANG1  &kp BACKSPACE   &lt 2 ENTER  &kp RALT  &kp RWIN
+&kp LSHIFT     &kp Z         &kp X        &kp C         &kp V      &kp B        &kp LEFT_BRACKET  &kp N        &kp M     &kp COMMA  &kp DOT   &kp FSLH
+               &kp LEFT_ALT  &lt 1 LANG2  &kp LEFT_GUI  &kp SPACE  &lt 2 LANG1  &kp BACKSPACE   &lt 1 ENTER  &kp RALT  &kp RWIN
 &out OUT_TOG   &out_bt_nxt                                                      &kp UP          &mo 3        &kp DOWN  &kp RIGHT
 &mo 5          &mo 6         &none        &none                                 &mo 6           &mo 5        &none     &none
             >;
@@ -171,10 +170,10 @@
             //           |     |     |          |     |          |                           |     |         |         |     |
 
             bindings = <
-&trans  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp EQUAL      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0     &kp N4  &kp N5  &kp N6  &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans     &trans  &trans  &trans  &mo 3          &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp EQUAL      &trans           &mkp MB4  &kp UP    &mkp MB5   &trans  &trans
+&trans  &kp N0     &kp N4  &kp N5  &kp N6  &trans         &trans           &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans     &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &kp RIGHT_BRACKET  &trans    &trans    &trans     &trans  &trans
+        &trans     &trans  &trans  &trans  &mo 3          &kp DELETE  &trans  &trans  &trans
 &trans  &trans                                            &trans  &trans  &trans  &trans
 &trans  &trans     &trans  &trans                         &trans  &trans  &trans  &trans
             >;
@@ -183,10 +182,10 @@
         lang1_layer_sym {
             display-name = "kana long press";
             bindings = <
-&trans  &kp LS(GRAVE)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)      &trans           &mkp MB4  &kp UP    &mkp MB5   &trans  &trans
-&trans  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans             &trans           &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)  &kp RIGHT_BRACE  &trans    &trans    &trans     &trans  &trans
-        &trans         &mo 3       &trans      &trans      &trans             &trans           &trans    &trans    &trans
+&trans  &kp LS(GRAVE)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)      &trans &kp F7 &kp F8  &kp F9  &kp F12  &trans
+&trans  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans             &trans &kp F4 &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)  &trans &kp F1 &kp F2  &kp F3  &kp F10  &trans
+        &trans         &mo 3       &trans      &trans      &trans             &kp DELETE           &trans    &trans    &trans
 &trans  &trans                                                                &trans           &trans    &trans    &trans
 &trans  &trans         &trans      &trans                                     &none            &none     &trans    &trans
             >;
@@ -224,7 +223,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
 &trans  &trans                                  &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans                  &mo 6   &trans     &trans     &trans
+&trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans
             >;
         };
 
