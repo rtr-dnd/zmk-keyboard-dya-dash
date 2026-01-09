@@ -31,7 +31,7 @@ layers:
   - C
   - V
   - B
-  - '['
+  - {t: ▽, type: trans}
   - N
   - M
   - ','
@@ -66,13 +66,13 @@ layers:
   - '7'
   - '8'
   - '9'
-  - '='
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
   - ↑
   - '&mkp MB5'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '='
   - {t: ▽, type: trans}
   - '0'
   - '4'
@@ -83,20 +83,20 @@ layers:
   - ←
   - ↓
   - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - \
-  - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,7 +126,7 @@ layers:
   - Sft+7
   - Sft+8
   - Sft+9
-  - Sft+=
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F7
   - F8
@@ -150,7 +150,7 @@ layers:
   - Sft+1
   - Sft+2
   - Sft+3
-  - Sft+\
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
   - F2
