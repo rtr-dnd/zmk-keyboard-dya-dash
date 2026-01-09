@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: dya_dash}
 layers:
   Base Layer:
-  - ESCAPE
+  - {t: ESCAPE, s: TAB}
   - Q
   - W
   - E
@@ -491,7 +491,3 @@ combos:
   k: VOL DN
 - p: [47, 49]
   k: VOL UP
-- p: [12, 0]
-  k: Ctl+TAB
-- p: [24, 12, 0]
-  k: Sft+Ctl+TAB
